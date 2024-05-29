@@ -1,0 +1,20 @@
+{% extends "./base.html"%}
+{%block title %}Courses{% endblock %}
+
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h1>Edit Courses</h1>
+<br/><br/>
+<div class="formContainer">
+	<form method = "POST" class = "form-group">
+		{% csrf_token %}
+		{{ form|crispy }}
+		<div class="centerButton">
+			<button types = "submit">Update Courses <i class="material-icons">done</i></button>
+		</div>
+	</form>
+</div>
+{% endblock %}
+

@@ -1,0 +1,31 @@
+{% extends "./base.html"%}
+{%block title %}How To{% endblock %}
+
+{% block content %}
+	<div class="contentContainer">
+		<div class="blackHeaderBar"><span class="header">Getting Started</span></div>
+			<div class="textContainer">
+				<h4>Create an <a class= "h4" href="/account">Account</a></h4>
+				To create an account, visit the <a class= "contentContainer" href="/register">register</a> page.
+				<br>
+				<h4>Add your <a class= "h4" href="/courses">Courses</a></h4>
+				Click the "Add Course" button to create a new course. Click the <i class="material-icons" style="font-size:inherit;">edit</i> icon to edit the course name.
+				Click the <i class="material-icons" style="font-size:inherit;">delete</i> to delete a course.
+				<br>
+				<h4>Add your <a class= "h4" href="/calendar">Schedule</a></h4>
+				Click the <i class="material-icons" style="font-size:inherit;">add_circle</i> button located on the top-right of the <a class ="contentContainer" href="/calendar">My Calendar</a>.
+				Click the <i class="material-icons" style="font-size:inherit;">edit</i> icon to edit the task.
+				Click the <i class="material-icons" style="font-size:inherit;">delete</i> to delete a task.
+				<br>
+				<h4>View your <a class= "h4" href="/calendar">Calendar</a></h4>
+				Click the "View Calendar" button for a calendar view of your schedule. You can filter by month, week, and day.  
+				<br>
+				<h4>Edit your <a class= "h4" href="/calendar">Tasks</a></h4>
+				Click the <i class="material-icons" style="font-size:inherit;">edit</i> icon on the task you wish to edit. Enter your new task name and due date under the respective boxes.
+				<br>
+				<h4>Complete a <a class= "h4" href="/calendar">Task</a></h4>
+				Click the <i class="material-icons" style="font-size:inherit;">check_circle_outline</i> to complete a task and recieve points. You can view the total amount of points you have by checking the <a class="contentContainer" href="/account">Account</a> page.
+			</div>
+		</div>
+     </div>
+{% endblock %}
